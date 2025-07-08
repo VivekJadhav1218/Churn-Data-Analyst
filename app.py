@@ -13,7 +13,7 @@ model = joblib.load('churn_model.pkl')
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:\\Users\\vivek\\Downloads\\WA_Fn-UseC_-Telco-Customer-Churn.csv")
+    df = pd.read_csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
     df.drop('customerID', axis=1, inplace=True)
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
     df.dropna(subset=['TotalCharges'], inplace=True)

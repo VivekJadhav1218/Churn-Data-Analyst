@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 # Load dataset
-df = pd.read_csv("C:\\Users\\vivek\\Downloads\\WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = pd.read_csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
 
 # Preview
 print(df.head())
